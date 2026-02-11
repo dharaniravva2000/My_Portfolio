@@ -8,9 +8,11 @@ export default function SkillIconCard({
   orbitDuration = 6
 }) {
   const shouldReduce = useReducedMotion();
-  const resolvedSrc = iconSrc?.startsWith("/")
-    ? `${import.meta.env.BASE_URL}${iconSrc.slice(1)}`
-    : iconSrc;
+  const base = import.meta.env.BASE_URL || "/";
+  const resolvedSrc =
+    iconSrc?.startsWith("/") && !iconSrc.startsWith(base)
+      ? `${base}${iconSrc.slice(1)}`
+      : iconSrc;
 
   return (
     <motion.button

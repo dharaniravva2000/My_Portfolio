@@ -3,16 +3,18 @@ import SectionHeader from "../components/projects-coverflow/SectionHeader.jsx";
 import SkillIconCard from "../components/skills/SkillIconCard.jsx";
 
 // Skill icon grid data (kept separate for easy editing).
+const iconBase = import.meta.env.BASE_URL || "/";
+
 const skillsData = [
-  { label: "React", iconSrc: "/skills/react.svg" },
-  { label: "JavaScript", iconSrc: "/skills/javascript.svg" },
-  { label: "Tailwind", iconSrc: "/skills/tailwindcss.svg" },
-  { label: "Motion", iconSrc: "/skills/framer.svg" },
-  { label: "Figma", iconSrc: "/skills/figma.svg" },
-  { label: "GitHub", iconSrc: "/skills/github.svg" },
-  { label: "Vite", iconSrc: "/skills/vite.svg" },
-  { label: "CSS3", iconSrc: "/skills/css3.svg" },
-  { label: "HTML5", iconSrc: "/skills/html5.svg" }
+  { label: "React", iconSrc: `${iconBase}skills/react.svg` },
+  { label: "JavaScript", iconSrc: `${iconBase}skills/javascript.svg` },
+  { label: "Tailwind", iconSrc: `${iconBase}skills/tailwindcss.svg` },
+  { label: "Motion", iconSrc: `${iconBase}skills/framer.svg` },
+  { label: "Figma", iconSrc: `${iconBase}skills/figma.svg` },
+  { label: "GitHub", iconSrc: `${iconBase}skills/github.svg` },
+  { label: "Vite", iconSrc: `${iconBase}skills/vite.svg` },
+  { label: "CSS3", iconSrc: `${iconBase}skills/css3.svg` },
+  { label: "HTML5", iconSrc: `${iconBase}skills/html5.svg` }
 ];
 
 const skillPositions = [
