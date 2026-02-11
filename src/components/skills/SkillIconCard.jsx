@@ -8,6 +8,9 @@ export default function SkillIconCard({
   orbitDuration = 6
 }) {
   const shouldReduce = useReducedMotion();
+  const resolvedSrc = iconSrc?.startsWith("/")
+    ? `${import.meta.env.BASE_URL}${iconSrc.slice(1)}`
+    : iconSrc;
 
   return (
     <motion.button
@@ -40,7 +43,7 @@ export default function SkillIconCard({
         className="flex h-11 w-11 items-center justify-center rounded-full bg-[#120d0a]/80 text-[#c9a16b] ring-1 ring-[#3a2c1f]/80 [will-change:transform]"
       >
         <img
-          src={iconSrc}
+          src={resolvedSrc}
           alt=""
           aria-hidden="true"
           className="h-5 w-5 object-contain"
