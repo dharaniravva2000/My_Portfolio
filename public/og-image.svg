@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4646" />
+      <stop offset="1" stop-color="#c62727" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0d0d0f" />
+  <rect x="80" y="80" width="1040" height="470" rx="32" fill="#121214" stroke="#2e2e33" />
+  <text x="140" y="250" font-family="Bebas Neue, sans-serif" font-size="92" fill="#ff4646" letter-spacing="8">PORTFOLIO</text>
+  <text x="140" y="330" font-family="Archivo, sans-serif" font-size="28" fill="#f5f5f5" letter-spacing="4">Ravvadharani · Frontend Developer</text>
+  <text x="140" y="385" font-family="Archivo, sans-serif" font-size="22" fill="#cfcfcf">High-performance, motion-driven web experiences</text>
+  <circle cx="980" cy="315" r="110" fill="url(#g)" opacity="0.9" />
+</svg>
